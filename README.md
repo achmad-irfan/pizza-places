@@ -56,11 +56,4 @@ first I  need to identify the following data:</p>
 <img src="fsp4s.png" class="img-fluid" alt="">  
 </p>
 <h3>Insight and Recomendation:</h3>
-<p>• Focus on improving delivery services by providing service promises, for example orders can be received 30 minutes after orders are placed within a 5 km radius. </p>
-<p>• Providing special discounts for users who use the service more than 25 times, with the aim of increasing user interest to use the service more often so as to increase turnover.</p>
-
-<p>• Special discounts that are only valid at certain hours (for example 7-8 am) are expected to be used during order hours so as to avoid miss opportunities due to time constraints, especially at 11-1 pm.</p>
-<p>• Making the Sawah Besar branch a role model for other branches in terms of spatial planning, decoration, uniforms, how to serve customers and other aspects.</p>
-<p>• the cost of stock availability, especially for chicken and beef raw materials as well as complementary raw materials in the form of rice and others to avoid miss-opportunities due to running out of raw materials while there are still orders.</p>
-<p>•Introducing promos at the right time is expected to increase the number of users. For example, discounts are only valid at 7-9 am, discounts that are only valid on weekends.</p>
 
