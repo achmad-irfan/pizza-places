@@ -20,7 +20,10 @@ import dash_bootstrap_components as dbc
 
 app= dash.Dash(__name__)
 server=app.server
-
+app.layout = dbc.Container(
+    dbc.Alert("Hello Bootstrap!", color="success"),
+    className="p-5",
+)
 
 # In[3]:
 
