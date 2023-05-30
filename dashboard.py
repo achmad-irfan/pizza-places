@@ -19,7 +19,7 @@ from flask import Flask
 # In[2]:
 
 
-app = Flask(__name__)
+app = dash.Dash(__name__)
 
 
 # In[3]:
@@ -240,5 +240,4 @@ def filter_input(data_filter,input_filters):
 # In[ ]:
 
 
-if __name__ == '__main__':
-    app.server.run(debug=False, threaded=True)
+server = app.server
