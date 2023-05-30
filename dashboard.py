@@ -232,7 +232,7 @@ def filter_input(data_filter,input_filters):
     
     fig6 = generate_chart(filtered_data, filtered_data['bulan'].unique(),
                           filtered_data.groupby('bulan')['revenue'].sum().reset_index()['revenue'], 'bar')
-    fig6.update_layout(title={'text': "Revenue Contribution by Pizza Types"})
+    fig6.update_layout(title={'text': "Revenue Contribution by Month"})
     
     return fig1, fig2, fig3, fig4, fig5, fig6
 
