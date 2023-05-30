@@ -107,3 +107,23 @@ first I  need to identify the following data:</p>
 <p align="center"> 
 <img src="no-3.png" class="img-fluid" alt="">  
 </p>
+
+<h4>4. Revenue contribution by pizza size</h4>
+<p style="margin-left: 30px"> Code: </p>
+<div style="margin-left: 50px;height:80px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+	<p> </p>
+<p style="margin-left: 20px">data_merge['revenue']=data_merge['quantity']*data_merge['price'] </p>
+<p style="margin-left: 20px">data_merge_revenue= data_merge.groupby('size')['revenue'].sum().reset_index() </p>
+<p style="margin-left: 20px">data_merge_revenue.to_csv('data_merge_revenue.csv',index=False) </p>
+<p style="margin-left: 20px">size= data_merge_revenue['size'].tolist() </p>
+<p style="margin-left: 20px">revenue= data_merge_revenue['revenue'].tolist() </p>
+<p style="margin-left: 20px">plt.figure(figsize=(11,8)) </p>
+<p style="margin-left: 20px">plt.pie(revenue, labels=size,autopct='%1.1f%%') </p>
+<p style="margin-left: 20px">plt.title('Revenue Contribution by Pizza Size') </p>
+<p style="margin-left: 20px">plt.show </p>
+</div>
+
+<p style="margin-left: 30px"> Output: </p>
+<p align="center"> 
+<img src="no-4.png" class="img-fluid" alt="">  
+</p>
