@@ -47,7 +47,7 @@ first I  need to identify the following data:</p>
   <p style="margin-left: 20px">order.duplicated('order_id').any() #Checking whetevr any duplicate data in data order column order_id </p>
 </div> 
 <h3>Dat Analyze</h3>
-<h4>Total Order per Month</h4>
+<h4>1. Total Order per Month</h4>
 <p style="margin-left: 30px"> Code: </p>
 <div style="margin-left: 50px;height:50px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
 	<p> </p>
@@ -64,4 +64,25 @@ first I  need to identify the following data:</p>
 <p style="margin-left: 30px"> Output: </p>
 <p align="center"> 
 <img src="no-1.png" class="img-fluid" alt="">  
+</p>
+
+<h4>2. Total Order per Hours</h4>
+<p style="margin-left: 30px"> Code: </p>
+<div style="margin-left: 50px;height:50px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+	<p> </p>
+<p style="margin-left: 20px">order['time']=pd.to_datetime(order['time']) </p>
+<p style="margin-left: 20px">order['hours']=order['time'].dt.strftime("%H") </p>
+<p style="margin-left: 20px">order_hour= order.groupby('hours')['order_id'].count().reset_index() </p>
+<p style="margin-left: 20px">order_hour.to_csv('order_hour.csv',index=False) </p>
+<p style="margin-left: 20px">plt.figure(figsize=(8,4)) </p>
+<p style="margin-left: 20px">sns.barplot(data=order_hour, x='hours', y='order_id') </p>
+<p style="margin-left: 20px">plt.title('Orders by Hours') </p>
+<p style="margin-left: 20px">plt.xlabel('Hours') </p>
+<p style="margin-left: 20px">plt.ylabel('Total Transaction') </p>
+<p style="margin-left: 20px">plt.show </p>
+</div>
+
+<p style="margin-left: 30px"> Output: </p>
+<p align="center"> 
+<img src="no-2.png" class="img-fluid" alt="">  
 </p>
