@@ -18,7 +18,8 @@ from dash.dependencies import Input, Output
 # In[2]:
 
 
-app= dash.Dash()
+server = flask.Flask(__name__)
+app = dash.Dash(__name__, server=server)
 
 
 # In[3]:
@@ -239,5 +240,5 @@ def filter_input(data_filter,input_filters):
 # In[ ]:
 
 
-app.run(port=4050)
-
+if __name__ == '__main__':
+    app.server.run(debug=False, threaded=True)
