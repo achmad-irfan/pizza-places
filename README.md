@@ -42,7 +42,21 @@ first I  need to identify the following data:</p>
 
 <h4>Data Duplicate Checking</h4>
 <p style="margin-left: 30px"> Code for data duplicate checking :</p>
-<div style="margin-left: 30px;height:200px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+<div style="margin-left: 30px;height:300px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
 	<p> </p>
   <p style="margin-left: 20px">order.duplicated('order_id').any() #Checking whetevr any duplicate data in data order column order_id </p>
 </div> 
+<h3>Dat Analyze</h3>
+<h4>Total Order per Month</h4>
+<p style="margin-left: 30px"> Code: </p>
+<div style="margin-left: 30px;height:400px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+	<p> </p>
+<p style="margin-left: 20px">order['date']=pd.to_datetime(order['date']) </p>
+<p style="margin-left: 20px">order['month']=order['date'].dt.strftime("%Y-%m") </p>
+<p style="margin-left: 20px">plt.figure(figsize=(11,4)) </p>
+<p style="margin-left: 20px">sns.lineplot(data=order.groupby('month')['order_id'].count().reset_index(),x='month',y='order_id') </p>
+<p style="margin-left: 20px">plt.title('Total Orders per Month') </p>
+<p style="margin-left: 20px">plt.ylabel('Total Transaction') </p>
+<p style="margin-left: 20px">plt.xlabel('Month') </p>
+<p style="margin-left: 20px">plt.show </p>
+</div>
