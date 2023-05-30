@@ -49,7 +49,7 @@ first I  need to identify the following data:</p>
 <h3>Dat Analyze</h3>
 <h4>1. Total Order per Month</h4>
 <p style="margin-left: 30px"> Code: </p>
-<div style="margin-left: 50px;height:50px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+<div style="margin-left: 50px;height:80px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
 	<p> </p>
 <p style="margin-left: 20px">order['date']=pd.to_datetime(order['date']) </p>
 <p style="margin-left: 20px">order['month']=order['date'].dt.strftime("%Y-%m") </p>
@@ -68,7 +68,7 @@ first I  need to identify the following data:</p>
 
 <h4>2. Total Order per Hours</h4>
 <p style="margin-left: 30px"> Code: </p>
-<div style="margin-left: 50px;height:50px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+<div style="margin-left: 50px;height:80px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
 	<p> </p>
 <p style="margin-left: 20px">order['time']=pd.to_datetime(order['time']) </p>
 <p style="margin-left: 20px">order['hours']=order['time'].dt.strftime("%H") </p>
@@ -85,4 +85,25 @@ first I  need to identify the following data:</p>
 <p style="margin-left: 30px"> Output: </p>
 <p align="center"> 
 <img src="no-2.png" class="img-fluid" alt="">  
+</p>
+
+<h4>3. Ranking Most of Popular Pizzas</h4>
+<p style="margin-left: 30px"> Code: </p>
+<div style="margin-left: 50px;height:80px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+	<p> </p>
+<p style="margin-left: 20px">data_merge = pd.merge(order_detail,pizzas,on='pizza_id') </p>
+<p style="margin-left: 20px">data_merge_quantity= data_merge.groupby('pizza_type_id')['quantity'].sum().reset_index() </p>
+<p style="margin-left: 20px">data_merge_quantity.to_csv('data_merge_quantity.csv',index=False) </p>
+<p style="margin-left: 20px">plt.figure(figsize=(11,8)) </p>
+<p style="margin-left: 20px">plt.xticks(rotation='vertical') </p>
+<p style="margin-left: 20px">sns.barplot(data=data_merge_quantity.sort_values('quantity', ascending=False),x='pizza_type_id',y='quantity') </p>
+<p style="margin-left: 20px">plt.title('Ranking Most of Popular Pizzas') </p>
+<p style="margin-left: 20px">plt.xlabel('Pizza Type') </p>
+<p style="margin-left: 20px">plt.ylabel('Total Orders') </p>
+<p style="margin-left: 20px">plt.show </p>
+</div>
+
+<p style="margin-left: 30px"> Output: </p>
+<p align="center"> 
+<img src="no-3.png" class="img-fluid" alt="">  
 </p>
