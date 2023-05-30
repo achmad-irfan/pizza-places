@@ -127,3 +127,43 @@ first I  need to identify the following data:</p>
 <p align="center"> 
 <img src="no-4.png" class="img-fluid" alt="">  
 </p>
+
+<h4>5 Revenue contribution by pizza type¶e</h4>
+<p style="margin-left: 30px"> Code: </p>
+<div style="margin-left: 50px;height:80px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+	<p> </p>
+<p style="margin-left: 20px">data_merge_size= data_merge.groupby('pizza_type_id')['revenue'].sum().reset_index() </p>
+<p style="margin-left: 20px">data_merge_size.to_csv('data_merge_size.csv',index=False) </p>
+<p style="margin-left: 20px">plt.figure(figsize=(11,8)) </p>
+<p style="margin-left: 20px">plt.xticks(rotation='vertical') </p>
+<p style="margin-left: 20px">sns.barplot(data=data_merge_size.sort_values('revenue', ascending=False),x='pizza_type_id',y='revenue') </p>
+<p style="margin-left: 20px">plt.title('Revenue Contribution by Pizza Type') </p>
+<p style="margin-left: 20px">plt.xlabel('Pizza Type',) </p>
+<p style="margin-left: 20px">plt.ylabel('Revenue') </p>
+<p style="margin-left: 20px">plt.show </p>
+</div>
+
+<h4>6. Revenue Contribution by Month</h4>
+<p style="margin-left: 30px"> Code: </p>
+<div style="margin-left: 50px;height:80px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+	<p> </p>
+<p style="margin-left: 20px">data_merge_order_merge= pd.merge(order,data_merge, on='order_id') </p>
+<p style="margin-left: 20px">data_merge_revenue_month = data_merge_order_merge.groupby('month')['revenue'].sum().reset_index() </p>
+<p style="margin-left: 20px">data_merge_revenue_month.to_csv('data_merge_revenue_month.csv',index=False) </p>
+<p style="margin-left: 20px">plt.figure(figsize=(11,8)) </p>
+<p style="margin-left: 20px">plt.xticks(rotation='vertical') </p>
+<p style="margin-left: 20px">sns.barplot(data=data_merge_revenue_month,x='month',y='revenue') </p>
+<p style="margin-left: 20px">plt.title('Revenue Contribution by Month') </p>
+<p style="margin-left: 20px">plt.xlabel('Month',) </p>
+<p style="margin-left: 20px">plt.ylabel('Revenue') </p>
+<p style="margin-left: 20px">plt.show </p>
+![image](https://github.com/achmadirfana/pizza-places/assets/125809336/c662c678-0836-4889-93cb-5c208797113d)
+
+</div>
+
+
+<p style="margin-left: 30px"> Output: </p>
+<p align="center"> 
+<img src="no-6.png" class="img-fluid" alt="">  
+</p>
+
