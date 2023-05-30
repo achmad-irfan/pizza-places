@@ -174,3 +174,6 @@ first I  need to identify the following data:</p>
 <p style="margin-left: 40px"> • Pizzas with the chicken meat is the most sold pizzas  </p>
 <p style="margin-left: 40px"> • The business is stabil in 2015 based on income with the avarge of 5% growth or loss   </p>
 <h4 style="margin-left: 20px"> 6.2 Reccmendation</h4>
+<p style="margin-left: 40px;align=justify"> •Pizzas in sizes XL and XXL contribute very little to revenue, so to further maximize revenue 1-2 hours before closing, pizzas in XXL or XL can be scaled down to sizes S or L to increase the likelihood of being sold  <p>
+<p style="margin-left: 40px;align=justify"> •	Make sure the stock of chicken meat is always available because pizza with chicken meat sells very well compared to other flavors/toppings  <p>
+
