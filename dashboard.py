@@ -19,8 +19,7 @@ from flask import Flask
 # In[2]:
 
 
-server = flask.Flask(__name__)
-app = dash.Dash(__name__, server=server)
+app = Flask(__name__)
 
 
 # In[3]:
