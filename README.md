@@ -2,7 +2,7 @@
 
 
 <h2>  Pizza Places</h2>
-<p> URL Dashoboard project : <a href="https://app.powerbi.com/view?r=eyJrIjoiNDFjYWQ4MGMtOTNmNy00OTA1LTk4ZDgtNTMwOTYwM2FmYTc2IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9">Pizza Places</a></p>
+<p> URL Dashoboard project : <a href="https://pizza-places.onrender.com/">Pizza Places</a></p>
 <h3> Background Project :</h3>
 <p> work as an analyst for the Pizza Place restaurant. My boss asked you to analyze the restaurant's performance in 2015 </p>
 <h3>Purpose:</h3>
