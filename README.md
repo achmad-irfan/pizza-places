@@ -17,45 +17,24 @@ first I  need to identify the following data:</p>
 <h3>Datas:</h3>
 <h4>Dataset:</h4>
 <p>In this project, it used 3 csv files, orders, order_details, and pizzas, that can be accessed in the following link:</p>
-<p><p align="right"> <a href="https://drive.google.com/file/d/1Kfsd39u3bQujcwm6qDGvidlH5Lqc8wiJ/view?usp=share_link">orders</a></p> </p>
-<p><p align="right"> <a href="https://drive.google.com/file/d/1arl5qCDzmMLRTK9WMQmDCthgWZELrEQD/view?usp=share_link">order_details</a></p> </p>
-<p><p align="right"> <a href="https://drive.google.com/file/d/1FCHb0csgSgaal3sMgVCMu4PS-eb5qYBg/view?usp=share_link">pizzas</a></p> </p>
+<p><p align="left"> <a href="https://drive.google.com/file/d/1Kfsd39u3bQujcwm6qDGvidlH5Lqc8wiJ/view?usp=share_link">orders</a></p> </p>
+<p><p align="left"> <a href="https://drive.google.com/file/d/1arl5qCDzmMLRTK9WMQmDCthgWZELrEQD/view?usp=share_link">order_details</a></p> </p>
+<p><p align="left"> <a href="https://drive.google.com/file/d/1FCHb0csgSgaal3sMgVCMu4PS-eb5qYBg/view?usp=share_link">pizzas</a></p> </p>
 <p>each file is data from 2015 and must be imported to jupyter notebook</p>
-<h4>Data Description:</h4>
 
 
-<h3>Dashboard result:</h3>
-<h4>Page Customer Data:</h4>
-<p align="center"> 
-<img src="fsp1.png" class="img-fluid" alt="">  
-</p>
-<h5>Dashboard Customer Data Component:</h5>
-<p align="center"> 
-<img src="fsp1s.png" class="img-fluid" alt="">  
-</p>
-<h4>Page Sales Report Branch:</h4>
-<p align="center"> 
-<img src="fsp2.png" class="img-fluid" alt="">  
-</p>
-<h5>Dashboard Sales Report Branch Component:</h5>
-<p align="center"> 
-<img src="fsp2s.png" class="img-fluid" alt="">  
-</p>
-<h4>Page Sales Report Menu:</h4>
-<p align="center"> 
-<img src="fsp3.png" class="img-fluid" alt="">  
-</p>
-<h5>Dashboard Sales Report Menu Component:</h5>
-<p align="center"> 
-<img src="fsp3s.png" class="img-fluid" alt="">  
-</p>
-<h4>Page Sales Report Customer:</h4>
-<p align="center"> 
-<img src="fsp4.png" class="img-fluid" alt="">  
-</p>
-<h5>Dashboard Sales Report Customer Component:</h5>
-<p align="center"> 
-<img src="fsp4s.png" class="img-fluid" alt="">  
-</p>
-<h3>Insight and Recomendation:</h3>
-
+<h3>Data Preparation</h3>
+<h4>Data Validation:</h4>
+<p style="margin-left: 30px"> All the data must be checked whetever there is a abnormal data. The  queery for data checking and validating :</p>
+<div style="margin-left: 30px;height:200px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+	<p> </p>
+  <p style="margin-left: 20px">import pandas as pd </p>
+<p style="margin-left: 20px">import seaborn as sns </p>
+<p style="margin-left: 20px">import matplotlib.pyplot as plt </p>
+<p style="margin-left: 20px">import calendar </p>
+<p style="margin-left: 20px">order= pd.read_csv("orders.csv") </p>
+<p style="margin-left: 20px">order_detail= pd.read_csv("order_details.csv") </p>
+<p style="margin-left: 20px">pizzas= pd.read_csv("pizzas.csv") </p>
+<p style="margin-left: 20px">order_detail.isnull().any() #Checking data blank in file order_detail </p>
+<p style="margin-left: 20px">pizzas.isnull().any() #Checking data blank in file pizzas </p>
+</div> 
