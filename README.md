@@ -24,7 +24,8 @@ first I  need to identify the following data:</p>
 
 
 <h3>Data Preparation</h3>
-<h4>Data Validation:</h4>
+<p> All files must be put in the same folder/directory as python </p>
+<h4>Data Validation</h4>
 <p style="margin-left: 30px"> All the data must be checked whetever there is a abnormal data. The  queery for data checking and validating :</p>
 <div style="margin-left: 30px;height:200px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
 	<p> </p>
@@ -37,4 +38,11 @@ first I  need to identify the following data:</p>
 <p style="margin-left: 20px">pizzas= pd.read_csv("pizzas.csv") </p>
 <p style="margin-left: 20px">order_detail.isnull().any() #Checking data blank in file order_detail </p>
 <p style="margin-left: 20px">pizzas.isnull().any() #Checking data blank in file pizzas </p>
+</div> 
+
+<h4>Data Duplicate Checking</h4>
+<p style="margin-left: 30px"> Code for data duplicate checking :</p>
+<div style="margin-left: 30px;height:200px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+	<p> </p>
+  <p style="margin-left: 20px">order.duplicated('order_id').any() #Checking whetevr any duplicate data in data order column order_id </p>
 </div> 
