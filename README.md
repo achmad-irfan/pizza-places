@@ -17,8 +17,10 @@ first I  need to identify the following data:</p>
 <h3>Datas:</h3>
 <h4>Dataset:</h4>
 <p>In this project, it used 3 csv files, orders, order_details, and pizzas, that can be accessed in the following link:</p>
-<p> </p>
-<p>each file is data from 2022 to 2023 and must imported to jupyter notebook</p>
+<p><p align="right"> <a href="https://drive.google.com/file/d/1Kfsd39u3bQujcwm6qDGvidlH5Lqc8wiJ/view?usp=share_link">orders</a></p> </p>
+<p><p align="right"> <a href="https://drive.google.com/file/d/1arl5qCDzmMLRTK9WMQmDCthgWZELrEQD/view?usp=share_link">order_details</a></p> </p>
+<p><p align="right"> <a href="https://drive.google.com/file/d/1FCHb0csgSgaal3sMgVCMu4PS-eb5qYBg/view?usp=share_link">pizzas</a></p> </p>
+<p>each file is data from 2015 and must be imported to jupyter notebook</p>
 <h4>Data Description:</h4>
 
 
