@@ -167,3 +167,10 @@ first I  need to identify the following data:</p>
 <img src="no-6.png" class="img-fluid" alt="">  
 </p>
 
+<h3>6. Insight and Recomendation</h3>
+<h4 style="margin-left: 20px">6.1 Insight</h4>
+<p style="margin-left: 40px"> • Based on data, time around lunch and dinner is the time with the most oder of pizzas</p>
+<p style="margin-left: 40px"> • More than 75% income  is the from pizza with the M and S size  </p>
+<p style="margin-left: 40px"> • Pizzas with the chicken meat is the most sold pizzas  </p>
+<p style="margin-left: 40px"> • The business is stabil in 2015 based on income with the avarge of 5% growth or loss   </p>
+<h4 style="margin-left: 20px"> 6.2 Reccmendation</h4>
