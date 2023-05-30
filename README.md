@@ -49,7 +49,7 @@ first I  need to identify the following data:</p>
 <h3>Dat Analyze</h3>
 <h4>Total Order per Month</h4>
 <p style="margin-left: 30px"> Code: </p>
-<div style="margin-left: 30px;height:50px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
+<div style="margin-left: 50px;height:50px;width:1000px;border:1px solid #ccc;font:14px/6px Georgia, Garamond, Serif;overflow:auto;">
 	<p> </p>
 <p style="margin-left: 20px">order['date']=pd.to_datetime(order['date']) </p>
 <p style="margin-left: 20px">order['month']=order['date'].dt.strftime("%Y-%m") </p>
@@ -60,3 +60,8 @@ first I  need to identify the following data:</p>
 <p style="margin-left: 20px">plt.xlabel('Month') </p>
 <p style="margin-left: 20px">plt.show </p>
 </div>
+
+<p style="margin-left: 30px"> Output: </p>
+<p align="center"> 
+<img src="no-1.png" class="img-fluid" alt="">  
+</p>
